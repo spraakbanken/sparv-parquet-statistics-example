@@ -1,0 +1,17 @@
+metadata:
+  short_description:
+    swe: Exempel corpus från parquet med statistik
+  language: swe
+  id: parquet-statistics
+
+import:
+  importer: sbx_parquet_import:parse
+
+export:
+  default:
+    - xml_export:pretty
+    - sbx_corpus_statistics:stat_highlights
+  annotations:
+    - document
+    - text
+    - <token>

@@ -1,0 +1,24 @@
+[project]
+name = "sparv-parquet-statistics-example"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+authors = [{ name = "Språkbanken", email = "sb-info@svenska.gu.se" }]
+dependencies = [
+  "sparv",
+  "sparv-sbx-corpus-statistics>=0.2.0",
+  "sparv-sbx-parquet-import",
+]
+
+[project.scripts]
+sparv-parquet-statistics-example = "sparv_parquet_statistics_example:main"
+
+[build-system]
+requires = ["uv_build>=0.13.7,<0.14.0"]
+build-backend = "uv_build"
+
+[tool.uv.sources]
+sparv-sbx-parquet-import = { git = "ssh://git@github.com/spraakbanken/sparv-sbx-parquet-import.git" }
+sparv = { git = "https://github.com/spraakbanken/sparv", branch = "dev" }
+sparv-sbx-corpus-statistics = { git = "https://github.com/spraakbanken/sparv-sbx-corpus-statistics", branch = "main" }
