@@ -1729,7 +1729,7 @@ dependencies = [
 requires-dist = [
     { name = "sparv", git = "https://github.com/spraakbanken/sparv?branch=dev" },
     { name = "sparv-sbx-corpus-statistics", git = "https://github.com/spraakbanken/sparv-sbx-corpus-statistics?branch=main" },
-    { name = "sparv-sbx-parquet-import", git = "ssh://git@github.com/spraakbanken/sparv-sbx-parquet-import.git" },
+    { name = "sparv-sbx-parquet-import", git = "https://github.com/spraakbanken/sparv-sbx-parquet-import.git?branch=main" },
 ]
 
 [[package]]
@@ -1747,7 +1747,7 @@ dependencies = [
 [[package]]
 name = "sparv-sbx-parquet-import"
 version = "0.1.0"
-source = { git = "ssh://git@github.com/spraakbanken/sparv-sbx-parquet-import.git#201835dc5c6a23f496d68c4825739259a953938f" }
+source = { git = "https://github.com/spraakbanken/sparv-sbx-parquet-import.git?branch=main#201835dc5c6a23f496d68c4825739259a953938f" }
 dependencies = [
     { name = "pyarrow" },
     { name = "sparv" },

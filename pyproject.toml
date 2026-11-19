@@ -19,6 +19,6 @@ requires = ["uv_build>=0.13.7,<0.14.0"]
 build-backend = "uv_build"
 
 [tool.uv.sources]
-sparv-sbx-parquet-import = { git = "ssh://git@github.com/spraakbanken/sparv-sbx-parquet-import.git" }
+sparv-sbx-parquet-import = { git = "https://git@github.com/spraakbanken/sparv-sbx-parquet-import.git", branch = "main" }
 sparv = { git = "https://github.com/spraakbanken/sparv", branch = "dev" }
 sparv-sbx-corpus-statistics = { git = "https://github.com/spraakbanken/sparv-sbx-corpus-statistics", branch = "main" }
